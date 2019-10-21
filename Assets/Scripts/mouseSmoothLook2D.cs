@@ -6,7 +6,8 @@ public class mouseSmoothLook2D : MonoBehaviour
 {
     public Camera theCamera;
     public float smoothing = 5.0f;
-    public float adjustmentAngle = 0.0f;
+    public float adjustmentAngle = 0.0f;
+
 
     // Update is called once per frame
     void Update()
