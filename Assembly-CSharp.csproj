@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\mouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\weaponScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mgorle/zombieShooter/zombieShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

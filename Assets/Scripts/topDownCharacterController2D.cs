@@ -6,8 +6,8 @@ public class topDownCharacterController2D : MonoBehaviour
 {
     public float speed = 5.0f;
     Rigidbody2D rigidbody2D;
-    public GameObject playerBullet;
-    public float bulletSpeed = 5.0f;
+    //public GameObject playerBullet;
+    //public float bulletSpeed = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +21,15 @@ public class topDownCharacterController2D : MonoBehaviour
         float y = Input.GetAxis("Vertical");
         rigidbody2D.velocity = new Vector2(x, y) * speed;
         rigidbody2D.angularVelocity = 0.0f;
-        if (Input.GetButtonDown("Fire1"))
-        {
-            
-            GameObject bullet = Instantiate(playerBullet, transform.position, transform.rotation);
-            bullet.transform.Rotate(0, 0, 180);
-            bullet.GetComponent<Rigidbody2D>().AddForce(transform.up * bulletSpeed);
-            
-            Destroy(bullet, 3);
-        }
+        //This is the old bullet shooting code.
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+         //   
+          //  GameObject bullet = Instantiate(playerBullet, transform.position, transform.rotation);
+           // bullet.transform.Rotate(0, 0, 180);
+           // bullet.GetComponent<Rigidbody2D>().AddForce(transform.up * bulletSpeed);
+           // 
+           // Destroy(bullet, 3);
+        //}
     }
 }
