@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\lookAtTarget.cs" />
     <Compile Include="Assets\Scripts\mouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
+    <Compile Include="Assets\Scripts\playerHealth.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
     <Compile Include="Assets\Scripts\weaponScript.cs" />
