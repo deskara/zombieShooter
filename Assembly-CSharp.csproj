@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\bulletScript.cs" />
     <Compile Include="Assets\Scripts\mouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
