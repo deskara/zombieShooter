@@ -278,6 +278,64 @@ Transform:
   m_Father: {fileID: 1774680593}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1379934659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7465765407486164477, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7683710360141669449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1379934664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379934659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8072392bb6fa19043b5bcf4c52f8a0c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &1379934665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379934659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520e9a54a8b2b3e419000bdab87493c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1774680593}
+  speed: 5
+--- !u!114 &1379934666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379934659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1038a29458a0a8642a0ebf867a675b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1774680593}
+  smoothing: 5
+  adjustmentAngle: 270
 --- !u!1 &1400623897
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,5 +722,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7557512804509372415, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b, type: 3}
+    - {fileID: 228223018042104124, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b, type: 3}
