@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2781127573176823473}
   - component: {fileID: -7429752676693702389}
   - component: {fileID: 5960337325137880227}
+  - component: {fileID: 7523657207483822159}
   - component: {fileID: -7557512804509372415}
   - component: {fileID: 228223018042104124}
   - component: {fileID: 2109394223057038692}
@@ -123,6 +124,44 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.55}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &7523657207483822159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465765407486164477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a87728b39433241ad588fd7e85ea3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -7557512804509372415}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 228223018042104124}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: enemySpawn, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &-7557512804509372415
 MonoBehaviour:
   m_ObjectHideFlags: 0
