@@ -15,8 +15,8 @@ TagManager:
   - 
   - playerDamage
   - enemyHealth
-  - 
-  - 
+  - playerHealth
+  - enemyDamage
   - 
   - 
   - 

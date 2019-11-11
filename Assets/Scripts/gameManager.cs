@@ -10,11 +10,11 @@ public class gameManager : MonoBehaviour
     }
     public void EndGame()
     {
-        //SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("GameOver");
     }
     public void BackToMainMenu()
     {
-        //SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenu");
     }
     public void QuitGame()
     {
