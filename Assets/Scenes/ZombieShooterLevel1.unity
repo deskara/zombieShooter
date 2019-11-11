@@ -403,7 +403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef2375774679984d9445dd00e9cff05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 499772697}
+  prefabToSpawn: {fileID: 7465765407486164477, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+    type: 3}
   adjustmentAngle: 270
 --- !u!4 &324066482
 Transform:
@@ -575,12 +576,6 @@ Transform:
   m_Father: {fileID: 1774680593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &499772697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7465765407486164477, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7683710360141669449}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,9 +1250,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.059725046, y: -0.49107313}
+  m_Offset: {x: -0.047391832, y: -0.24132347}
   serializedVersion: 2
-  m_Radius: 0.51684546
+  m_Radius: 0.5384283
 --- !u!50 &1774680591
 Rigidbody2D:
   serializedVersion: 4
@@ -1556,16 +1551,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock
-      objectReference: {fileID: 0}
-    - target: {fileID: 720559394605717231, guid: 613b58277fe3ec24a9d60fbb144f3b5a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 720559394605717231, guid: 613b58277fe3ec24a9d60fbb144f3b5a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 720559394605717219, guid: 613b58277fe3ec24a9d60fbb144f3b5a,
         type: 3}
