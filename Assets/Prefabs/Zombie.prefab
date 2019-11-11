@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 228223018042104124}
   - component: {fileID: 2109394223057038692}
   - component: {fileID: -5756158194592016384}
+  - component: {fileID: -3835090792944035445}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
@@ -252,3 +253,16 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 4269079373417236417, guid: f74a8b34def8a6f41a4ff928638b50b7,
     type: 3}
   adjustmentAngle: 270
+--- !u!114 &-3835090792944035445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465765407486164477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88bb86d70c575be43b988af0ff5ee018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
