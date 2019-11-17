@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script handles making an enemy move towards the player.
 public class MoveTowardsObject : MonoBehaviour
 {
     public Transform target;
@@ -15,5 +16,6 @@ public class MoveTowardsObject : MonoBehaviour
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
-    }
+    }
+
 }

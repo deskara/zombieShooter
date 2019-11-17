@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//This script handles changing the scenes or exiting the game.
 public class gameManager : MonoBehaviour
 {
     public void StartGame()
@@ -20,4 +21,4 @@ public class gameManager : MonoBehaviour
     {
         Application.Quit();  
     }
-}
+}

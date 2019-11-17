@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script handles making the enemies look at the player.
 public class lookAtTarget : MonoBehaviour
 {
     public Transform target;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script handles the animations for the player.
 public class PlayerAnim : MonoBehaviour
 {
     private Animator gunAnim;
@@ -23,4 +24,4 @@ public class PlayerAnim : MonoBehaviour
             gunAnim.SetBool("isFiring", false);
         }
     }
-}
+}

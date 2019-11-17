@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 [System.Serializable]
 public class enemySpawn : UnityEvent<Transform> { }
+//This script ensures that the enemy's pathfinding will be able to find the player object.
 public class Enemy : MonoBehaviour
 {
     public enemySpawn onSpawn;
@@ -13,4 +14,4 @@ public class Enemy : MonoBehaviour
         GameObject player = GameObject.FindWithTag("Player");
         onSpawn.Invoke(player.transform);
     }
-}
+}

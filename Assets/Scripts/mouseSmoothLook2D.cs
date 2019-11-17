@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//This script handles making the player look at the mouse.
 public class mouseSmoothLook2D : MonoBehaviour
 {
     public Camera theCamera;

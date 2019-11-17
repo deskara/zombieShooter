@@ -20,4 +20,4 @@ public class hurtTrigger : MonoBehaviour
         //After the resetTime window is up the player can get hit again by the same collider.
         GetComponent<Collider2D>().enabled = true;
     }
-}
+}

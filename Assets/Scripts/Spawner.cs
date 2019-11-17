@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script handles spawning enemies.
 public class Spawner : MonoBehaviour
 {
     public GameObject prefabToSpawn;

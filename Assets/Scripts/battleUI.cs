@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//This script handles the UI
 public class battleUI : MonoBehaviour
 {
     public Slider healthBar;
