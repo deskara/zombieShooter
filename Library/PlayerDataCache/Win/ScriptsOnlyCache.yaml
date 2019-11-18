@@ -833,4 +833,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ZombieShooterLevel1.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Tutorial.unity
-  playerPath: C:/Users/mgorle/Documents/gameDemo/zombieShooter.exe
+  playerPath: M:/MG files/Coding/zombieShooterBuild/zombieShooter.exe
