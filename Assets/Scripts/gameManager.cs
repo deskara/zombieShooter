@@ -13,6 +13,10 @@ public class gameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+    public void StartTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
