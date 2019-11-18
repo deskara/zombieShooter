@@ -138,6 +138,75 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/Tutorial.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9662}
+    - Class: 114
+      Script: {instanceID: 9740}
+    - Class: 114
+      Script: {instanceID: 9826}
+    - Class: 114
+      Script: {instanceID: 10022}
+    - Class: 114
+      Script: {instanceID: 10274}
+    - Class: 114
+      Script: {instanceID: 10668}
+    - Class: 114
+      Script: {instanceID: 10774}
+    - Class: 114
+      Script: {instanceID: 11034}
+    - Class: 114
+      Script: {instanceID: 11132}
+    - Class: 114
+      Script: {instanceID: 11340}
+    - Class: 114
+      Script: {instanceID: 11482}
+    - Class: 114
+      Script: {instanceID: 11506}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/ZombieShooterLevel1.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -232,6 +301,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 255
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -761,4 +832,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/ZombieShooterLevel1.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: M:/MG files/Coding/zombShooterBuild/zombieShooter.exe
+  - Assets/Scenes/Tutorial.unity
+  playerPath: C:/Users/mgorle/Documents/gameDemo/zombieShooter.exe
