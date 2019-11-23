@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\bulletScript.cs" />
     <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\escapeMenu.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\healthSystem.cs" />
     <Compile Include="Assets\Scripts\hurtTrigger.cs" />
