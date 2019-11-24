@@ -35,7 +35,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -735,7 +734,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 305b5a2c9e62b6898891350b59de0210
+      Hash: 7864ec58f8c02b6a3b86dc34839f65e2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: tutorialEvents
