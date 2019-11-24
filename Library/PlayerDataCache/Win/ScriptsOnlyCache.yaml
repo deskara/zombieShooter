@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - addScore
     - battleUI
     - bulletScript
+    - escapeMenu
     - gameManager
     - healthSystem
     - hurtTrigger
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - smoothFollow2D
     - timerEvent
     - topDownCharacterController2D
+    - tutorialEvents
     - weaponScript
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -68,15 +70,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9866}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10276}
     - Class: 114
-      Script: {instanceID: 10646}
+      Script: {instanceID: 10648}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 11134}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -115,15 +117,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9866}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10276}
     - Class: 114
-      Script: {instanceID: 10646}
+      Script: {instanceID: 10648}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 11134}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,23 +176,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9826}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10276}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 10774}
+      Script: {instanceID: 10776}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 11036}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 11134}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 11510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,45 +251,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9866}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 9938}
     - Class: 114
-      Script: {instanceID: 10152}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10200}
+      Script: {instanceID: 10154}
     - Class: 114
-      Script: {instanceID: 10214}
+      Script: {instanceID: 10202}
     - Class: 114
-      Script: {instanceID: 10236}
+      Script: {instanceID: 10216}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10238}
     - Class: 114
-      Script: {instanceID: 10496}
+      Script: {instanceID: 10276}
     - Class: 114
-      Script: {instanceID: 10546}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 10576}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10578}
     - Class: 114
-      Script: {instanceID: 10774}
+      Script: {instanceID: 10648}
     - Class: 114
-      Script: {instanceID: 10926}
+      Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 10776}
     - Class: 114
-      Script: {instanceID: 10984}
+      Script: {instanceID: 10928}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 10986}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 11036}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11134}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11544}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -407,6 +415,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 2fa5477190470530ba57847d1e4bf61f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: escapeMenu
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -721,6 +735,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 305b5a2c9e62b6898891350b59de0210
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tutorialEvents
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -833,4 +853,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ZombieShooterLevel1.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Tutorial.unity
-  playerPath: M:/MG files/Coding/zombieShooterBuild/zombieShooter.exe
+  playerPath: C:/Users/mgorle/Documents/newDemo/zombieShooter.exe
