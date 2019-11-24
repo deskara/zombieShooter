@@ -7,11 +7,13 @@ public class tutorialEvents : MonoBehaviour
 {
     public UnityEvent playerMoved;
     public UnityEvent playerShot;
-    GameObject player = GameObject.FindWithTag("Player");
-    Transform initialPosition;
+    GameObject player; 
+    Vector3 initialPosition;
     private void Start()
     {
-        initialPosition = player.transform;
+        player = GameObject.FindWithTag("Player");
+        initialPosition = player.transform.localPosition;
+
 
     }
 
@@ -24,7 +26,7 @@ public class tutorialEvents : MonoBehaviour
             playerShot.Invoke();
         }
 
-        if (initialPosition != player.transform)
+        if (initialPosition != player.transform.localPosition)
         {
             playerMoved.Invoke();
         }
