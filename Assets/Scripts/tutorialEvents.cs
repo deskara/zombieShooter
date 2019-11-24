@@ -7,8 +7,10 @@ public class tutorialEvents : MonoBehaviour
 {
     public UnityEvent playerMoved;
     public UnityEvent playerShot;
+    public UnityEvent FirstStepsCompleted;
     GameObject player; 
     Vector3 initialPosition;
+    bool shotCheck = false, movedCheck = false;
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
@@ -21,14 +23,22 @@ public class tutorialEvents : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetMouseButton(0) | Input.GetMouseButton(1))
+        if(Input.GetMouseButton(0) | Input.GetMouseButton(1) && shotCheck == false)
         {
             playerShot.Invoke();
+            shotCheck = true;
         }
 
-        if (initialPosition != player.transform.localPosition)
+        if (initialPosition != player.transform.localPosition && movedCheck == false)
         {
             playerMoved.Invoke();
+            movedCheck = true;
+        }
+
+        if (movedCheck == true && shotCheck == true)
+        {
+            FirstStepsCompleted.Invoke();
+
         }
         
     }
