@@ -17,7 +17,7 @@ public class playerHealth : MonoBehaviour
     public int health = 10;
     public void TakeDamage(int damage)
     {
-        Debug.Log("An attempt to make the player take damage was made");
+        //Debug.Log("An attempt to make the player take damage was made");
         onDamaged.Invoke(health);
         health -= damage;
         if (health <= 0)
