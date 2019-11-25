@@ -16,7 +16,7 @@ public class escapeMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("escape"))
+        if (Input.GetKeyDown("escape"))
         {
             if (currentMenuStatus == false){
                 addMenu.Invoke();
