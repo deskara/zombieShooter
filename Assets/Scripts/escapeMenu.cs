@@ -11,7 +11,7 @@ public class escapeMenu : MonoBehaviour
     float baseTime;
     void Start()
     {
-        baseTime = Time.timeScale;
+        baseTime = 1;
 
     }
 
