@@ -592,7 +592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &371627562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1313,21 +1313,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
-        type: 3}
-      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
-        type: 3}
-      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
-        type: 3}
-      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: -7557512804509372415, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
         type: 3}
       propertyPath: target
@@ -1347,6 +1332,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109394223057038692, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b, type: 3}
@@ -1770,7 +1770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1514064784
 RectTransform:
   m_ObjectHideFlags: 0

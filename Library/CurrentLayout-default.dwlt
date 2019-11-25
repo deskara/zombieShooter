@@ -470,19 +470,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mgorle\Documents\GitHub\zombieShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a22e0000
-    m_LastClickedID: 11938
+    m_SelectedIDs: 922d0000
+    m_LastClickedID: 11666
     m_ExpandedIDs: 000000005c2d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -632,9 +632,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1e2b0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 74fbffff
+      m_ExpandedIDs: 80f7ffff74fbffff0e38000028380000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -694,9 +694,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1141.8954, y: 318.1679, z: -1004.5148}
+    m_Target: {x: 1469.4675, y: 63.771492, z: -14.373854}
     speed: 2
-    m_Value: {x: 1141.8954, y: 318.1679, z: -1004.5148}
+    m_Value: {x: 1469.4675, y: 63.771492, z: -14.373854}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -729,9 +729,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 840.33984
+    m_Target: 476.21063
     speed: 2
-    m_Value: 840.33984
+    m_Value: 476.21063
   m_Ortho:
     m_Target: 1
     speed: 2
