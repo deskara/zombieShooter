@@ -9,7 +9,7 @@ public class PlayerAnim : MonoBehaviour
     {
         gunAnim = GetComponent<Animator>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetMouseButton(0))
         {

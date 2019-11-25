@@ -32,7 +32,7 @@ public class weaponScript : MonoBehaviour
         }
         Invoke("SetFiring", fireTime);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         // 0 is the left mouse button
         if (Input.GetMouseButton(0))

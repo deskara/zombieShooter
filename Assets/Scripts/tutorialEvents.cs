@@ -28,8 +28,8 @@ public class tutorialEvents : MonoBehaviour
         healthBar.value = health;
     }
 
-    // Update is called once per frame
-    void Update()
+ 
+    void FixedUpdate()
     {
         
         if(Input.GetMouseButton(0) | Input.GetMouseButton(1) && shotCheck == false)

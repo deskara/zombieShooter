@@ -5,12 +5,14 @@ using UnityEngine.Events;
 
 public class escapeMenu : MonoBehaviour
 {
+    //This script is used for menus during gameplay.
     public UnityEvent addMenu,removeMenu;
     bool currentMenuStatus = false;
-    // Start is called before the first frame update
+    float baseTime;
     void Start()
     {
-        
+        baseTime = Time.timeScale;
+
     }
 
     // Update is called once per frame
@@ -21,14 +23,24 @@ public class escapeMenu : MonoBehaviour
             if (currentMenuStatus == false){
                 addMenu.Invoke();
                 currentMenuStatus = true;
+                pause();
             }
             else
             {
                 removeMenu.Invoke();
                 currentMenuStatus = false;
+                unpause();
             }
 
         }
         
+    }
+    public void pause()
+    {
+        Time.timeScale = 0;
+    }
+    public void unpause()
+    {
+        Time.timeScale = baseTime;
     }
 }

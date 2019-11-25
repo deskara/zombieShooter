@@ -12,16 +12,14 @@ public class buttonAnim : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    //This will be ran when the player hovers over the button using the unity event for it.
     public void buttonEnter()
     {
         buttonAnimator.SetBool("isHovering", true);
 
     }
+    //This will be ran when the player stops hoverig over the button using the unity event for it.
     public void buttonexit()
     {
         buttonAnimator.SetBool("isHovering", false);
