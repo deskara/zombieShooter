@@ -29,7 +29,7 @@ public class battleUI : MonoBehaviour
         playerScore += theScore;
         scoreText.text = "SCORE: " + playerScore.ToString();
     }
-    private void UpdateCoins(int AdditionalCoins)
+    public void UpdateCoins(int AdditionalCoins)
     {
         playerCoins += AdditionalCoins;
         coinText.text = "Coins: " + playerCoins.ToString();

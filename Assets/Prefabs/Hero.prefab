@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5145564098638300719}
   - component: {fileID: 5145564098638300716}
   - component: {fileID: 5145564098638300717}
+  - component: {fileID: -6009746080217531194}
   m_Layer: 10
   m_Name: Hero
   m_TagString: Player
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1498524765
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6610731943237019977, guid: 6ab77e098a36dd84fa8076ae4caf0af5,
     type: 3}
@@ -247,6 +248,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 961f6b0ffa899f744afa3766c02a56e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6009746080217531194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145564098638300727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6c47d40ee2c6a4bb3b68aaed8d6e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5145564099146919583

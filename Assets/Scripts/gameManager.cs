@@ -22,6 +22,10 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
+    public void goToHomeBase()
+    {
+        SceneManager.LoadScene("homeBase");
+    }
     public void QuitGame()
     {
         Application.Quit();  

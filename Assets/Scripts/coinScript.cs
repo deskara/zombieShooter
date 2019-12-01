@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class coinScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public int coins = 0;
+    public UnityEvent coinPickedUp;
+    public void pickUp()
     {
-        collision.transform.SendMessage("pickupCoin", SendMessageOptions.DontRequireReceiver);
-        Destroy(gameObject);
+        coins += 1;
+        coinPickedUp.Invoke();
 
+
+        Destroy(gameObject);
     }
 }
