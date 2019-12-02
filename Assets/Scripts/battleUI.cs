@@ -19,6 +19,7 @@ public class battleUI : MonoBehaviour
     {
         playerHealth.OnUpdateHealth -= UpdateHealthBar;
         addScore.OnSendScore -= UpdateScore;
+        PlayerPrefs.SetInt("Score", playerScore);
     }
     private void UpdateHealthBar(int health)
     {

@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1579251401
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 56e0d8c8004e79d4e9baea284604df60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -224,6 +224,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2109394223057038692}
         m_MethodName: destroyThis
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -3835090792944035445}
+        m_MethodName: OnAddScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
