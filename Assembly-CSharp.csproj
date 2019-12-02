@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\coinScript.cs" />
     <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\enterBase.cs" />
     <Compile Include="Assets\Scripts\escapeMenu.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\healthSystem.cs" />
@@ -78,9 +79,9 @@
     <Compile Include="Assets\Scripts\mouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
     <Compile Include="Assets\Scripts\PlayerAnim.cs" />
+    <Compile Include="Assets\Scripts\playerCollisions.cs" />
     <Compile Include="Assets\Scripts\playerDeathHandler.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
-    <Compile Include="Assets\Scripts\playerPickup.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\timerEvent.cs" />
