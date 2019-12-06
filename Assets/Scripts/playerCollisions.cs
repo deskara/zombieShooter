@@ -11,5 +11,7 @@ public class playerCollisions : MonoBehaviour
         //This makes the other entity run the "enterBase method if it has it
         collision.transform.SendMessage("baseEntered", SendMessageOptions.DontRequireReceiver);
 
+        collision.transform.SendMessage("baseExitTouched", SendMessageOptions.DontRequireReceiver);
+
     }
 }
