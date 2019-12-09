@@ -11,6 +11,7 @@ public class gameManager : MonoBehaviour
     }
     public void EndGame()
     {
+        PlayerPrefs.SetInt("Coins", 0);
         SceneManager.LoadScene("GameOver");
     }
     public void StartTutorial()
@@ -19,6 +20,8 @@ public class gameManager : MonoBehaviour
     }
     public void BackToMainMenu()
     {
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Score", 0);
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
@@ -28,6 +31,8 @@ public class gameManager : MonoBehaviour
     }
     public void QuitGame()
     {
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Score", 0);
         Application.Quit();  
     }
 }

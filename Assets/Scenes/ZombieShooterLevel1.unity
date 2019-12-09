@@ -3516,7 +3516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbf4f2e1515c20499278af0db2d6f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 0
   coinPickedUp:
     m_PersistentCalls:
       m_Calls:

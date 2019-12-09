@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//This script handles the UI
+//This script handles the UI during Battles
 public class battleUI : MonoBehaviour
 {
     public Slider healthBar;
@@ -12,6 +12,10 @@ public class battleUI : MonoBehaviour
     public Text coinText;
     private void OnEnable()
     {
+        playerCoins = PlayerPrefs.GetInt("Coins");
+        playerScore = PlayerPrefs.GetInt("Score");
+        coinText.text = "Coins: " + playerCoins.ToString();
+        scoreText.text = "SCORE: " + playerScore.ToString();
         playerHealth.OnUpdateHealth += UpdateHealthBar;
         addScore.OnSendScore += UpdateScore;
     }
@@ -20,7 +24,9 @@ public class battleUI : MonoBehaviour
         playerHealth.OnUpdateHealth -= UpdateHealthBar;
         addScore.OnSendScore -= UpdateScore;
         PlayerPrefs.SetInt("Score", playerScore);
+        PlayerPrefs.SetInt("Coins", playerCoins);
     }
+
     private void UpdateHealthBar(int health)
     {
         healthBar.value = health;
