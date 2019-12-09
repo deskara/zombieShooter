@@ -211,17 +211,6 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -5756158194592016384}
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2109394223057038692}
         m_MethodName: destroyThis
         m_Mode: 1
@@ -235,6 +224,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: -3835090792944035445}
         m_MethodName: OnAddScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8311161153214529741}
+        m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 2789045743648331285}
   - component: {fileID: 3430390387405208504}
   - component: {fileID: 4111495708163642409}
+  - component: {fileID: 8311161153214529741}
   m_Layer: 11
   m_Name: hurtTrigger
   m_TagString: Untagged
@@ -402,3 +403,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   resetTime: 0.25
+--- !u!114 &8311161153214529741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865671696586893266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef2375774679984d9445dd00e9cff05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 5670627660900705281, guid: e12164b6966bbf441a3519bc4de06d43,
+    type: 3}
+  adjustmentAngle: 0
