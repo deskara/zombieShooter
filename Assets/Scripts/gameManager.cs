@@ -7,10 +7,19 @@ public class gameManager : MonoBehaviour
 {
     public void StartGame()
     {
+        PlayerPrefs.SetInt("damage", 1);
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Score", 0);
         SceneManager.LoadScene("ZombieShooterLevel1");
+    }
+    public void backToCombat()
+    {
+        SceneManager.LoadScene("ZombieShooterLevel1");
+
     }
     public void EndGame()
     {
+        PlayerPrefs.SetInt("damage", 1);
         PlayerPrefs.SetInt("Coins", 0);
         SceneManager.LoadScene("GameOver");
     }
@@ -20,6 +29,7 @@ public class gameManager : MonoBehaviour
     }
     public void BackToMainMenu()
     {
+        PlayerPrefs.SetInt("damage", 1);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
         Time.timeScale = 1;
@@ -31,6 +41,7 @@ public class gameManager : MonoBehaviour
     }
     public void QuitGame()
     {
+        PlayerPrefs.SetInt("damage", 1);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
         Application.Quit();  

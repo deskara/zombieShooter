@@ -1,18 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class upgradeScript : MonoBehaviour
 {
+    public Text damageUpgradeCost;
+    public Text coinText;
+    public Text vendorDialogue;
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        damageUpgradeCost.text = string.Format("Costs: {0}", PlayerPrefs.GetInt("damage") * 10);
+
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void purchaseDamageUpgrade()
     {
-        
+        if(PlayerPrefs.GetInt("Coins") >= PlayerPrefs.GetInt("damage") * 10)
+        {
+            PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") - (PlayerPrefs.GetInt("damage") * 10));
+            coinText.text = string.Format("Coins: {0}",PlayerPrefs.GetInt("Coins"));
+            vendorDialogue.text = "Thanks for your purchase.";
+        }
+        else
+        {
+            vendorDialogue.text = "You don't have enough money for that.";
+
+
+        }
     }
 }

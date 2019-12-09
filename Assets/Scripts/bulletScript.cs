@@ -5,10 +5,11 @@ using UnityEngine;
 public class bulletScript : MonoBehaviour
 {
     //These provide base values for the speed and damage of bullets.
-    public float moveSpeed = 100.0f;
+    public float moveSpeed = 250.0f;
     public int damage = 1;
     private void Start()
     {
+        damage = PlayerPrefs.GetInt("damage");
         //This gets the rigidbody component and adds force to it
         GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
     }
