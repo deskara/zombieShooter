@@ -12,7 +12,7 @@ public class upgradeScript : MonoBehaviour
     void Start()
     {
 
-        damageUpgradeCost.text = string.Format("Costs: {0}", PlayerPrefs.GetInt("damage") * 10);
+        damageUpgradeCost.text = string.Format("Costs: {0}", (PlayerPrefs.GetInt("damage") * 5));
 
 
 
@@ -22,8 +22,9 @@ public class upgradeScript : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("Coins") >= PlayerPrefs.GetInt("damage") * 10)
         {
-            PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") - (PlayerPrefs.GetInt("damage") * 10));
+            PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") - (PlayerPrefs.GetInt("damage") * 5));
             coinText.text = string.Format("Coins: {0}",PlayerPrefs.GetInt("Coins"));
+            damageUpgradeCost.text = string.Format("Costs: {0}", (PlayerPrefs.GetInt("damage") * 5))
             vendorDialogue.text = "Thanks for your purchase.";
         }
         else
