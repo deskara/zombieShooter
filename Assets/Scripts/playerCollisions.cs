@@ -13,5 +13,7 @@ public class playerCollisions : MonoBehaviour
 
         collision.transform.SendMessage("baseExitTouched", SendMessageOptions.DontRequireReceiver);
 
+        collision.transform.SendMessage("showShopDialogue", SendMessageOptions.DontRequireReceiver);
+
     }
 }

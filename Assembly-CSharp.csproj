@@ -84,11 +84,13 @@
     <Compile Include="Assets\Scripts\playerCollisions.cs" />
     <Compile Include="Assets\Scripts\playerDeathHandler.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
+    <Compile Include="Assets\Scripts\shopScript.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\timerEvent.cs" />
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
     <Compile Include="Assets\Scripts\tutorialEvents.cs" />
+    <Compile Include="Assets\Scripts\upgradeScript.cs" />
     <Compile Include="Assets\Scripts\weaponScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mgorle/Documents/GitHub/zombieShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
