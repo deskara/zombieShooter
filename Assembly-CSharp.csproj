@@ -91,7 +91,9 @@
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
     <Compile Include="Assets\Scripts\tutorialEvents.cs" />
     <Compile Include="Assets\Scripts\upgradeScript.cs" />
-    <Compile Include="Assets\Scripts\weaponScript.cs" />
+    <Compile Include="Assets\Scripts\Weapon System\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\Weapon System\WeaponPickup.cs" />
+    <Compile Include="Assets\Scripts\Weapon System\weaponScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>M:/MG files/Coding/zombieShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
