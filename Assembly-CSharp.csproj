@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\playerCollisions.cs" />
     <Compile Include="Assets\Scripts\playerDeathHandler.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
+    <Compile Include="Assets\Scripts\settingsScript.cs" />
     <Compile Include="Assets\Scripts\shopScript.cs" />
     <Compile Include="Assets\Scripts\smoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
