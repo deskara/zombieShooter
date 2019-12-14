@@ -60,7 +60,8 @@ public class weaponScript : MonoBehaviour
 
         }
         // 1 is the right mouse button
-        else if (Input.GetMouseButton(1)) 
+        //If is used instead of else if as it allows for both to be fired at the same time.
+        if (Input.GetMouseButton(1)) 
         {
             RightFire();
             if (PlayerPrefs.GetString("fireState") == "Both")
