@@ -10,7 +10,14 @@ public class gameManager : MonoBehaviour
         PlayerPrefs.SetInt("damage", 1);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.SetInt("daysSurvived",0);
+        Time.timeScale = 1;
         SceneManager.LoadScene("ZombieShooterLevel1");
+    }
+    public void resumeGame()
+    {
+        SceneManager.LoadScene("homeBase");
+
     }
     public void backToCombat()
     {
@@ -19,31 +26,34 @@ public class gameManager : MonoBehaviour
     }
     public void EndGame()
     {
-        PlayerPrefs.SetInt("damage", 1);
-        PlayerPrefs.SetInt("Coins", 0);
         SceneManager.LoadScene("GameOver");
     }
     public void StartTutorial()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Tutorial");
     }
     public void BackToMainMenu()
     {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void BackToMainMenuDeath()
+    {
         PlayerPrefs.SetInt("damage", 1);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.SetInt("daysSurvived", 0);
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
     public void goToHomeBase()
     {
+        PlayerPrefs.SetInt("daysSurvived", PlayerPrefs.GetInt("daysSurvived")+1);
         SceneManager.LoadScene("homeBase");
     }
     public void QuitGame()
     {
-        PlayerPrefs.SetInt("damage", 1);
-        PlayerPrefs.SetInt("Coins", 0);
-        PlayerPrefs.SetInt("Score", 0);
         Application.Quit();  
     }
 }

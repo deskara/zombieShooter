@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\lookAtTarget.cs" />
     <Compile Include="Assets\Scripts\mouseSmoothLook2D.cs" />
     <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
+    <Compile Include="Assets\Scripts\numDaysSurvivedScript.cs" />
     <Compile Include="Assets\Scripts\PlayerAnim.cs" />
     <Compile Include="Assets\Scripts\playerCollisions.cs" />
     <Compile Include="Assets\Scripts\playerDeathHandler.cs" />
