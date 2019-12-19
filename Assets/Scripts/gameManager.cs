@@ -11,7 +11,7 @@ public class gameManager : MonoBehaviour
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
         PlayerPrefs.SetInt("daysSurvived",0);
-        Time.timeScale = 1;
+        unpauseGame();
         SceneManager.LoadScene("ZombieShooterLevel1");
     }
     public void resumeGame()
@@ -30,12 +30,12 @@ public class gameManager : MonoBehaviour
     }
     public void StartTutorial()
     {
-        Time.timeScale = 1;
+        unpauseGame();
         SceneManager.LoadScene("Tutorial");
     }
     public void BackToMainMenu()
     {
-        Time.timeScale = 1;
+        unpauseGame();
         SceneManager.LoadScene("MainMenu");
     }
     public void BackToMainMenuDeath()
@@ -44,7 +44,7 @@ public class gameManager : MonoBehaviour
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("Score", 0);
         PlayerPrefs.SetInt("daysSurvived", 0);
-        Time.timeScale = 1;
+        unpauseGame();
         SceneManager.LoadScene("MainMenu");
     }
     public void goToHomeBase()
@@ -55,5 +55,14 @@ public class gameManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();  
+    }
+    public void pauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    public void unpauseGame()
+    {
+        Time.timeScale = 1;
+
     }
 }

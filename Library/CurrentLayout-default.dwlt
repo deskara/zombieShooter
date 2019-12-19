@@ -555,19 +555,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: M:\MG files\Coding\zombieShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca2d0000
-    m_LastClickedID: 11722
+    m_SelectedIDs: 262f0000
+    m_LastClickedID: 12070
     m_ExpandedIDs: 00000000882d0000262f00003c32000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -717,23 +717,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a6f6ffff
-      m_LastClickedID: -2394
-      m_ExpandedIDs: 6af7fffff8f7ffffa8f8ffff74fbffff6e3300002e340000
+      m_SelectedIDs: f6330000
+      m_LastClickedID: 13302
+      m_ExpandedIDs: 6cfaffff74fbffffb2330000be33000044340000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Top Border
-        m_OriginalName: Top Border
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2346
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 

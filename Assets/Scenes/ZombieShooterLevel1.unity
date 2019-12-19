@@ -1295,6 +1295,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1414305009}
+        m_MethodName: unpauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &528540802
@@ -1795,6 +1806,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1414305009}
+        m_MethodName: unpauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &981053928
@@ -2274,7 +2296,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2c1466ea910bb4040a67e6446d6b0a67, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.028
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3476,9 +3498,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
         type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
       propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2025283607}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1414305009}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pauseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625235539935548303, guid: 33f844654086ad84fb2d244a939a8e93,
+        type: 3}
+      propertyPath: playerInBase.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f844654086ad84fb2d244a939a8e93, type: 3}
 --- !u!1001 &4237545508594680679
