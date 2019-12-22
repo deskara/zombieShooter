@@ -65,7 +65,6 @@
     <Compile Include="Assets\Scripts\addScore.cs" />
     <Compile Include="Assets\Scripts\baseUI.cs" />
     <Compile Include="Assets\Scripts\battleUI.cs" />
-    <Compile Include="Assets\Scripts\bulletScript.cs" />
     <Compile Include="Assets\Scripts\buttonAnim.cs" />
     <Compile Include="Assets\Scripts\coinScript.cs" />
     <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
@@ -94,10 +93,9 @@
     <Compile Include="Assets\Scripts\topDownCharacterController2D.cs" />
     <Compile Include="Assets\Scripts\tutorialEvents.cs" />
     <Compile Include="Assets\Scripts\upgradeScript.cs" />
+    <Compile Include="Assets\Scripts\Weapon System\bulletScript.cs" />
     <Compile Include="Assets\Scripts\Weapon System\leftGunAnim.cs" />
     <Compile Include="Assets\Scripts\Weapon System\rightGunAnim.cs" />
-    <Compile Include="Assets\Scripts\Weapon System\WeaponManager.cs" />
-    <Compile Include="Assets\Scripts\Weapon System\WeaponPickup.cs" />
     <Compile Include="Assets\Scripts\Weapon System\weaponScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>M:/MG files/Coding/zombieShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
