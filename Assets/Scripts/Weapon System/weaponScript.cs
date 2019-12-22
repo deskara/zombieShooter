@@ -23,6 +23,7 @@ public class weaponScript : MonoBehaviour
         {
             leftisFiring = true;
             Instantiate(bulletPrefab, leftBulletSpawn.position, leftBulletSpawn.rotation);
+            bulletPrefab.GetComponent<bulletScript>().setDamage(PlayerPrefs.GetInt("damage"));
             if (GetComponent<AudioSource>() != null)
             {
                 GetComponent<AudioSource>().Play();
@@ -38,6 +39,7 @@ public class weaponScript : MonoBehaviour
         {
             rightisFiring = true;
             Instantiate(bulletPrefab, rightBulletSpawn.position, rightBulletSpawn.rotation);
+            bulletPrefab.GetComponent<bulletScript>().setDamage(PlayerPrefs.GetInt("damage"));
             if (GetComponent<AudioSource>() != null)
             {
                 GetComponent<AudioSource>().Play();

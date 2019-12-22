@@ -6,12 +6,16 @@ public class bulletScript : MonoBehaviour
 {
     //These provide base values for the speed and damage of bullets.
     public float moveSpeed = 250.0f;
-    public int damage = 1;
+    public float damage = 1;
     private void Start()
     {
-        damage = PlayerPrefs.GetInt("damage");
+        //damage = PlayerPrefs.GetInt("damage");
         //This gets the rigidbody component and adds force to it
         GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
+    }
+    public void setDamage(float newDamage)
+    {
+        damage = newDamage;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
