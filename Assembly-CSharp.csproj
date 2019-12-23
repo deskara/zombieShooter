@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\battleUI.cs" />
     <Compile Include="Assets\Scripts\buttonAnim.cs" />
     <Compile Include="Assets\Scripts\coinScript.cs" />
-    <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\enterBase.cs" />
     <Compile Include="Assets\Scripts\escapeMenu.cs" />
