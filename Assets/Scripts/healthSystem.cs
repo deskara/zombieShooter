@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 [System.Serializable]
-public class OnDamagedEvent : UnityEvent<int> { }
+public class OnDamagedEvent : UnityEvent<float> { }
 public class healthSystem : MonoBehaviour
 {
-    public int health = 10;
-    public int damage = 5;
+    public float health = 10;
+    public int damage = 1;
     public UnityEvent onDie;
     public OnDamagedEvent onDamaged;
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         //Health is made equal to health - damage
         health -= damage;

@@ -7,10 +7,7 @@ public class gameManager : MonoBehaviour
 {
     public void StartGame()
     {
-        PlayerPrefs.SetInt("damage", 1);
-        PlayerPrefs.SetInt("Coins", 0);
-        PlayerPrefs.SetInt("Score", 0);
-        PlayerPrefs.SetInt("daysSurvived",0);
+        resetStoredValues();
         unpauseGame();
         SceneManager.LoadScene("ZombieShooterLevel1");
     }
@@ -40,10 +37,7 @@ public class gameManager : MonoBehaviour
     }
     public void BackToMainMenuDeath()
     {
-        PlayerPrefs.SetInt("damage", 1);
-        PlayerPrefs.SetInt("Coins", 0);
-        PlayerPrefs.SetInt("Score", 0);
-        PlayerPrefs.SetInt("daysSurvived", 0);
+        resetStoredValues();
         unpauseGame();
         SceneManager.LoadScene("MainMenu");
     }
@@ -63,6 +57,15 @@ public class gameManager : MonoBehaviour
     public void unpauseGame()
     {
         Time.timeScale = 1;
+
+    }
+    public void resetStoredValues()
+    {
+        PlayerPrefs.SetInt("damage", 1);
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.SetInt("daysSurvived", 0);
+        PlayerPrefs.SetInt("numOfPiercingRifles", 0);
 
     }
 }

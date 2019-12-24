@@ -67,11 +67,13 @@
     <Compile Include="Assets\Scripts\battleUI.cs" />
     <Compile Include="Assets\Scripts\buttonAnim.cs" />
     <Compile Include="Assets\Scripts\coinScript.cs" />
+    <Compile Include="Assets\Scripts\destroyOnDie.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\enterBase.cs" />
     <Compile Include="Assets\Scripts\escapeMenu.cs" />
     <Compile Include="Assets\Scripts\exitBase.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
+    <Compile Include="Assets\Scripts\GunShopScript.cs" />
     <Compile Include="Assets\Scripts\healthSystem.cs" />
     <Compile Include="Assets\Scripts\HighScoreUI.cs" />
     <Compile Include="Assets\Scripts\hurtTrigger.cs" />
