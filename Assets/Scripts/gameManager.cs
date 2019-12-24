@@ -66,6 +66,9 @@ public class gameManager : MonoBehaviour
         PlayerPrefs.SetInt("Score", 0);
         PlayerPrefs.SetInt("daysSurvived", 0);
         PlayerPrefs.SetInt("numOfPiercingRifles", 0);
+        PlayerPrefs.SetInt("numOfDefaultGuns", 2);
+        PlayerPrefs.SetString("equippedLeftWeapon", "defaultGun");
+        PlayerPrefs.SetString("equippedRightWeapon", "defaultGun");
 
     }
 }
