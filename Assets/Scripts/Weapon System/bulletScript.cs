@@ -7,6 +7,7 @@ public class bulletScript : MonoBehaviour
     //These provide base values for the speed and damage of bullets.
     public float moveSpeed = 250.0f;
     public float damage = 1;
+    public string bulletType = "standard";
     private void Start()
     {
         //damage = PlayerPrefs.GetInt("damage");
@@ -17,12 +18,27 @@ public class bulletScript : MonoBehaviour
     {
         damage = newDamage;
     }
+    public void setMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = newMoveSpeed;
+    }
+    public void setType(string newType)
+    {
+        bulletType = newType;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //This makes the other entity run the "take damage" method
         other.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-        //Afterwards the bullet will be destroyed
-        Die();
+        if (bulletType != "piercing"){
+            Debug.Log(bulletType + " shot destroyed");
+            //Afterwards the bullet will be destroyed
+            //If it is not a piercing shot
+            Die();
+
+
+        }
+
     }
     //This destroys the game object when it is off-screen
     private void OnBecameInvisible()

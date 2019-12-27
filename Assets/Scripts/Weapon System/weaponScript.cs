@@ -24,6 +24,15 @@ public class weaponScript : MonoBehaviour
             leftisFiring = true;
             Instantiate(bulletPrefab, leftBulletSpawn.position, leftBulletSpawn.rotation);
             bulletPrefab.GetComponent<bulletScript>().setDamage(PlayerPrefs.GetInt("damage"));
+            if(PlayerPrefs.GetString("equippedLeftWeapon") != "piercingRifle")
+            {
+                bulletPrefab.GetComponent<bulletScript>().setType("standard");
+            }
+            else
+            {
+                bulletPrefab.GetComponent<bulletScript>().setType("piercing");
+                bulletPrefab.GetComponent<bulletScript>().setMoveSpeed(900);
+            }
             if (GetComponent<AudioSource>() != null)
             {
                 GetComponent<AudioSource>().Play();
@@ -40,6 +49,14 @@ public class weaponScript : MonoBehaviour
             rightisFiring = true;
             Instantiate(bulletPrefab, rightBulletSpawn.position, rightBulletSpawn.rotation);
             bulletPrefab.GetComponent<bulletScript>().setDamage(PlayerPrefs.GetInt("damage"));
+            if (PlayerPrefs.GetString("equippedRightWeapon") != "piercingRifle")
+            {
+                bulletPrefab.GetComponent<bulletScript>().setType("standard");
+            }
+            else
+            {
+                bulletPrefab.GetComponent<bulletScript>().setType("piercing");
+            }
             if (GetComponent<AudioSource>() != null)
             {
                 GetComponent<AudioSource>().Play();
