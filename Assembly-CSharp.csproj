@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Weapon System\leftGunAnim.cs" />
     <Compile Include="Assets\Scripts\Weapon System\rightGunAnim.cs" />
     <Compile Include="Assets\Scripts\Weapon System\weaponScript.cs" />
+    <Compile Include="Assets\Scripts\zombieSpawner.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>M:/MG files/Coding/zombieShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

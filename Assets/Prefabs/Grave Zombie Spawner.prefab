@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7748291431821013031}
   - component: {fileID: 4517393441541574981}
   - component: {fileID: 8152795166188449737}
-  - component: {fileID: 3000425926003856115}
+  - component: {fileID: 5814697064357311800}
   m_Layer: 0
   m_Name: Grave Zombie Spawner
   m_TagString: Untagged
@@ -99,8 +99,8 @@ MonoBehaviour:
   onTimerComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3000425926003856115}
-        m_MethodName: Spawn
+      - m_Target: {fileID: 5814697064357311800}
+        m_MethodName: spawnZombie
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &3000425926003856115
+--- !u!114 &5814697064357311800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,9 +121,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7832712100429386335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ef2375774679984d9445dd00e9cff05, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c9eb518578de6a46921bc2590c8900d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 7465765407486164477, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
-    type: 3}
+  prefabToSpawn: {fileID: 0}
   adjustmentAngle: 270
+  standardZombie: {fileID: 7465765407486164477, guid: cb6807a8d0bc2b6479f1ccda0e32cf7b,
+    type: 3}
+  speedyZombie: {fileID: 7439088671424577452, guid: f780d739ac609c6409697e4290ef3548,
+    type: 3}
+  bulkyZombie: {fileID: 829801454826857743, guid: 1d343063812f79e439da0675a3f7d161,
+    type: 3}
