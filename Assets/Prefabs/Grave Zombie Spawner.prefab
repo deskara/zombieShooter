@@ -132,3 +132,5 @@ MonoBehaviour:
     type: 3}
   bulkyZombie: {fileID: 829801454826857743, guid: 1d343063812f79e439da0675a3f7d161,
     type: 3}
+  bulkyZombieChance: 20
+  speedyZombieChance: 20

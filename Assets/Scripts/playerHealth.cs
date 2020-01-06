@@ -23,7 +23,7 @@ public class playerHealth : MonoBehaviour
         if (health <= 0)
         {
             onDie.Invoke();
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             //Debug.Log("Guess you're undead...");
         }
     }

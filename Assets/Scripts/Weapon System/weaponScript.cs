@@ -31,7 +31,6 @@ public class weaponScript : MonoBehaviour
             else
             {
                 bulletPrefab.GetComponent<bulletScript>().setType("piercing");
-                bulletPrefab.GetComponent<bulletScript>().setMoveSpeed(900);
             }
             if (GetComponent<AudioSource>() != null)
             {
