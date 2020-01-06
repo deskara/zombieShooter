@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class settingsScript : MonoBehaviour
 {
     public Text currentFireState;
+    public Text baseTutorialState;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,16 @@ public class settingsScript : MonoBehaviour
             currentFireState.text = "Disabled";
         }
         
+        if(PlayerPrefs.GetString("baseTutorialState") != "Disabled")
+        {
+            PlayerPrefs.SetString("baseTutorialState", "Enabled");
+            baseTutorialState.text = "Enabled";
+        }
+        else
+        {
+            baseTutorialState.text = "Disabled";
+
+        }
     }
     public void flipFireState()
     {
@@ -35,6 +46,22 @@ public class settingsScript : MonoBehaviour
             currentFireState.text = "Enabled";
 
         }
+    }
+
+    public void toggleBaseTutorial()
+    {
+        if (PlayerPrefs.GetString("baseTutorialState") != "Disabled")
+        {
+            PlayerPrefs.SetString("baseTutorialState", "Disabled");
+            baseTutorialState.text = "Disabled";
+        }
+        else
+        {
+            PlayerPrefs.SetString("baseTutorialState", "Enabled");
+            baseTutorialState.text = "Enabled";
+
+        }
+
     }
 
 }
