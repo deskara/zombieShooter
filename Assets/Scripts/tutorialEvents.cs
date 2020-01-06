@@ -10,8 +10,9 @@ public class tutorialEvents : MonoBehaviour
     public UnityEvent playerMoved;
     public UnityEvent playerShot;
     public UnityEvent FirstStepsCompleted;
-    public UnityEvent TutorialComplete;
+    public UnityEvent SecondStepsComplete;
     bool zombieDefeated = false;
+    bool baseEntered = false;
     GameObject player; 
     Vector3 initialPosition;
     bool shotCheck = false, movedCheck = false;
@@ -49,14 +50,18 @@ public class tutorialEvents : MonoBehaviour
             FirstStepsCompleted.Invoke();
 
         }
-        if (zombieDefeated == true)
+        if (zombieDefeated == true && baseEntered == false)
         {
-            TutorialComplete.Invoke();
+            SecondStepsComplete.Invoke();
         }
         
     }
     public void setZombieDefeated()
     {
         zombieDefeated = true;
+    }
+    public void setBaseEntered()
+    {
+        baseEntered = true;
     }
 }
