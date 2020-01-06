@@ -31,7 +31,7 @@ public class bulletScript : MonoBehaviour
         //This makes the other entity run the "take damage" method
         other.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         if (bulletType != "piercing"){
-            Debug.Log(bulletType + " shot destroyed");
+            //Debug.Log(bulletType + " shot destroyed");
             //Afterwards the bullet will be destroyed
             //If it is not a piercing shot
             Die();

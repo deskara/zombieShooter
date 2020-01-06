@@ -9,7 +9,7 @@ public class baseTutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetString("baseTutorialState") == "Enabled")
+        if (PlayerPrefs.GetString("baseTutorialState") != "Disabled" && PlayerPrefs.GetInt("daysSurvived") == 1)
         {
             startBaseTutorial.Invoke();
         }
