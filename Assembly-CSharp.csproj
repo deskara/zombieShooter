@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\enterBase.cs" />
     <Compile Include="Assets\Scripts\escapeMenu.cs" />
     <Compile Include="Assets\Scripts\exitBase.cs" />
+    <Compile Include="Assets\Scripts\fpsLimiter.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\GunShopScript.cs" />
     <Compile Include="Assets\Scripts\healthSystem.cs" />
