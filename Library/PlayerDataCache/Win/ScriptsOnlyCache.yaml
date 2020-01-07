@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - PlayerAnim
     - Spawner
     - addScore
+    - baseTutorial
     - baseUI
     - battleUI
     - bulletScript
@@ -99,7 +100,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -160,9 +161,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11508}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,6 +236,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10290}
     - Class: 114
+      Script: {instanceID: 10440}
+    - Class: 114
       Script: {instanceID: 10518}
     - Class: 114
       Script: {instanceID: 10526}
@@ -253,6 +256,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11010}
     - Class: 114
+      Script: {instanceID: 11016}
+    - Class: 114
       Script: {instanceID: 11062}
     - Class: 114
       Script: {instanceID: 11094}
@@ -267,11 +272,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11578}
+      Script: {instanceID: 11580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -396,11 +401,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11578}
+      Script: {instanceID: 11580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -475,6 +480,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9924}
     - Class: 114
+      Script: {instanceID: 9946}
+    - Class: 114
       Script: {instanceID: 10032}
     - Class: 114
       Script: {instanceID: 10190}
@@ -505,11 +512,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11536}
+    - Class: 114
+      Script: {instanceID: 11546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -771,7 +780,7 @@ ScriptsOnlyBuild:
     className: lookAtTarget
   - hash:
       serializedVersion: 2
-      Hash: e2be13f4e7f103e7f133d1a23d26b8a1
+      Hash: 45f9b5cbdc4749a493c73afa3e012132
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: settingsScript
@@ -879,7 +888,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 4e75332ef437b98813f8dfb53ed99a0d
+      Hash: 18b498b5e344c09053a3061796b7377e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: zombieSpawner
@@ -1047,7 +1056,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: df9fed251b9add77e93172d018e40efb
+      Hash: f5a19df3e006fbe475b345d8a7242d58
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: tutorialEvents
@@ -1081,6 +1090,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 1103e2c255a3e6abf3bcdea69110ebfa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: baseTutorial
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1178,4 +1193,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Tutorial.unity
   - Assets/Scenes/homeBase.unity
-  playerPath: M:/MG files/Coding/gameBuild/zombieShooter.exe
+  playerPath: M:/MG files/Coding/zombieMadness/ZombieMadness.exe
