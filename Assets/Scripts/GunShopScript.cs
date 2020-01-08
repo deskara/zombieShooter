@@ -15,6 +15,7 @@ public class GunShopScript : MonoBehaviour
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - 32);
             coinText.text = string.Format("Coins: {0}", PlayerPrefs.GetInt("Coins"));
             PlayerPrefs.SetInt("numOfPiercingRifles", PlayerPrefs.GetInt("numOfPiercingRifles") + 1);
+            GetComponent<AudioSource>().Play();
         }
         else if (PlayerPrefs.GetInt("numOfPiercingRifles") >= 2)
         {

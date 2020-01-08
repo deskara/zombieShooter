@@ -26,6 +26,7 @@ public class upgradeScript : MonoBehaviour
             PlayerPrefs.SetInt("damage", PlayerPrefs.GetInt("damage") + 1);
             coinText.text = string.Format("Coins: {0}",PlayerPrefs.GetInt("Coins"));
             damageUpgradeCost.text = string.Format("Costs: {0}", (PlayerPrefs.GetInt("damage") * 5));
+            GetComponent<AudioSource>().Play();
             vendorDialogue.text = "Thanks for your purchase.";
         }
         else
