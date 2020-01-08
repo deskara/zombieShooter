@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//This script handles showing the coins while in the base.
 public class baseUI : MonoBehaviour
 {
     public int playerCoins = 0;

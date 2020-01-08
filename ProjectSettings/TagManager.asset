@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SavedData
   - Canvas
+  - coinSound
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //This script handles changing the scenes or exiting the game.
+//And also handles resetting playerPref values.
 public class gameManager : MonoBehaviour
 {
     public void StartGame()
