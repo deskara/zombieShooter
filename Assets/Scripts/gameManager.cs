@@ -28,6 +28,7 @@ public class gameManager : MonoBehaviour
     public void StartTutorial()
     {
         unpauseGame();
+        resetStoredValues();
         SceneManager.LoadScene("Tutorial");
     }
     public void BackToMainMenu()
