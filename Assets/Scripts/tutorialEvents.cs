@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class tutorialEvents : MonoBehaviour
 {
     public Slider healthBar;
-    public UnityEvent playerMoved;
-    public UnityEvent playerShot;
     public UnityEvent FirstStepsCompleted;
     public UnityEvent SecondStepsComplete;
+    public Text tutorialText;
     bool zombieDefeated = false;
     bool baseEntered = false;
+    bool zombieDamaged = false;
+    bool playerHit = false, playerLethalDamage = false;
     GameObject player; 
     Vector3 initialPosition;
     bool shotCheck = false, movedCheck = false;
@@ -35,26 +36,43 @@ public class tutorialEvents : MonoBehaviour
         
         if(Input.GetMouseButton(0) | Input.GetMouseButton(1) && shotCheck == false)
         {
-            playerShot.Invoke();
             shotCheck = true;
+            tutorialText.text = "Use the arrow keys to move";
         }
 
-        if (initialPosition != player.transform.localPosition && movedCheck == false)
+        else if (initialPosition != player.transform.localPosition && movedCheck == false)
         {
-            playerMoved.Invoke();
             movedCheck = true;
+            tutorialText.text = "Use the mouse to shoot.";
         }
 
-        if (movedCheck == true && shotCheck == true && zombieDefeated == false)
+        else if (movedCheck == true && shotCheck == true && zombieDefeated == false)
         {
             FirstStepsCompleted.Invoke();
+            tutorialText.text = "To damage zombies aim using the mouse and click to fire." + System.Environment.NewLine +
+                "If a zombie gets too close you will get damaged. So try to move away if they get too close." + System.Environment.NewLine +
+                "Zombies will spawn at graves";
 
         }
-        if (zombieDefeated == true && baseEntered == false)
+        else if(zombieDamaged == true && zombieDefeated == false && playerHit == false)
+        {
+            tutorialText.text = "Nice, continue firing until the zombie is defeated";
+
+        }
+        else if (zombieDefeated == true && baseEntered == false)
         {
             SecondStepsComplete.Invoke();
         }
+
+        else if(zombieDefeated == true && baseEntered == false)
+        {
+
+        }
         
+    }
+    public void setZombieDamaged()
+    {
+        zombieDamaged = true;
     }
     public void setZombieDefeated()
     {
@@ -63,5 +81,13 @@ public class tutorialEvents : MonoBehaviour
     public void setBaseEntered()
     {
         baseEntered = true;
+    }
+    public void setPlayerHit()
+    {
+        playerHit = true;
+    }
+    public void setPlayerLethalDamage()
+    {
+        playerLethalDamage = true;
     }
 }
