@@ -46,13 +46,23 @@ public class tutorialEvents : MonoBehaviour
             tutorialText.text = "Use the mouse to shoot.";
         }
 
-        else if (movedCheck == true && shotCheck == true && zombieDefeated == false)
+        else if (movedCheck == true && shotCheck == true && zombieDefeated == false && playerHit == false && zombieDamaged == false)
         {
             FirstStepsCompleted.Invoke();
             tutorialText.text = "To damage zombies aim using the mouse and click to fire." + System.Environment.NewLine +
                 "If a zombie gets too close you will get damaged. So try to move away if they get too close." + System.Environment.NewLine +
                 "Zombies will spawn at graves";
 
+        }
+        else if(playerHit == true && zombieDefeated == false && playerLethalDamage == false)
+        {
+            tutorialText.text = "You got hit!" + System.Environment.NewLine +
+"Try to keep your distance while firing.";
+        }
+        else if(playerLethalDamage == true && zombieDefeated == false)
+        {
+            tutorialText.text = "If this weren't the tutorial your character would be dead." + System.Environment.NewLine +
+"Try to keep your distance while shooting.";
         }
         else if(zombieDamaged == true && zombieDefeated == false && playerHit == false)
         {
@@ -61,12 +71,14 @@ public class tutorialEvents : MonoBehaviour
         }
         else if (zombieDefeated == true && baseEntered == false)
         {
+            tutorialText.text = "When playing you can heal by entering the base" + System.Environment.NewLine +
+                "You can also get upgrades and equipment there.";
             SecondStepsComplete.Invoke();
         }
-
-        else if(zombieDefeated == true && baseEntered == false)
+        else if (zombieDefeated == true && baseEntered == true)
         {
-
+            tutorialText.text = "You've completed the tutorial." + System.Environment.NewLine +
+"Press escape when you wish to exit.";
         }
         
     }
