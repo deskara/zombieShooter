@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script handles spawning zombies
 //This script inherits from the standard Spawner script
 public class zombieSpawner : Spawner
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
+//This script handles the messages during the tutorial
 public class tutorialEvents : MonoBehaviour
 {
     public Slider healthBar;
@@ -33,22 +33,26 @@ public class tutorialEvents : MonoBehaviour
  
     void FixedUpdate()
     {
-        
+        //Once the player shoots
         if(Input.GetMouseButton(0) | Input.GetMouseButton(1) && shotCheck == false)
         {
             shotCheck = true;
+            //The notification to shoot is removed
             tutorialText.text = "Use the arrow keys to move";
         }
-
+        //Once the player moves
         else if (initialPosition != player.transform.localPosition && movedCheck == false)
         {
             movedCheck = true;
+            //The notification to move is removed.
             tutorialText.text = "Use the mouse to shoot.";
         }
-
+        //Once the player has both moved and shot
         else if (movedCheck == true && shotCheck == true && zombieDefeated == false && playerHit == false && zombieDamaged == false)
         {
+            //A zombie is enabled through the event
             FirstStepsCompleted.Invoke();
+            //And new instructions are given
             tutorialText.text = "To damage zombies aim using the mouse and click to fire." + System.Environment.NewLine +
                 "If a zombie gets too close you will get damaged. So try to move away if they get too close." + System.Environment.NewLine +
                 "Zombies will spawn at graves";
