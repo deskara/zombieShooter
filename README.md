@@ -18,8 +18,9 @@ The scene where combat occurs
 Currently just a clone of ZombieShooterLevel1, there were plans to have multiple maps but this was scrapped.
 
 ## Scripts
+I've given a short description of what each script does.
 ### Weapon System Folder
-
+This folder contains the scripts that specifically pertain to weapons.
 #### bulletScript
 This script handles having the bullets deal damage, destroying them and contains the setters for firespeed and damage.
 #### leftGunAnim
@@ -43,9 +44,9 @@ Handles removing the coin when the player collides with it and also increasing t
 #### destroyOnDie
 Gives the game object a die method which destroys it. This can be called by other scripts to destroy the object.
 #### Enemy
-
+Ensures that the zombies can find the player
 #### enterBase
-
+Makes the enter base menu pop up while also making sure the player isn't stuck in a loop if they choose not to enter.
 #### escapeMenu
 Handles the pause menu which pops up and is removed by pressing escape.
 #### exitBase
@@ -55,43 +56,43 @@ Ensures that the FPS doesn't go too high as that can cause problems.
 #### gameManager
 Handles moving the player to a different scene and resetting playerPrefs values when appropriate.
 #### GunShopScript
-
+Handles purchases from the gun shop
 #### healthSystem
-
+Handles the health for the zombies
 #### HighScoreUI
-
+Handles displaying and scoring the high scores upon game over.
 #### hurtTrigger
-
+Disables and re-enables the hurtTrigger on the zombie upon hitting the player.
 #### inventoryScript
-
+Ensures that the player can see the items in their inventory.
 #### lookAtTarget
-
+Handles rotating the zombies to look at the player.
 #### mouseSmoothLook2D
-
+Handles rotating the player to look at the mouse
 #### MoveTowardsObject
-
+Allows a gameobject to follow another gameobject,. Used by the zombies.
 #### numDaysSurvivedScript
-
+Handles displaying the number of days the player survived in the game over screen.
 #### PlayerAnim
-
+Handles animating the player when they're firing.
 #### playerCollisions
 Makes all events such as a player colliding with a base occur.
 #### playerDeathHandler
-
+Unused. A relic from when the game would be paused and a message would be displayed before going to the game over screen.
 #### playerHealth
-
+Handles sending the health value to the UI and contains methods for 
 #### settingsScript
-
+Handles setting the options which the player can choose from the main menu.
 #### shopScript
 Has an event attached to it which can be used to enable the shop menus.
 #### smoothFollow2D
-
+Allows a gameobject to follow another gameobject. Used by the camera.
 #### Spawner
 Spawns a specified gameObject
 #### timerEvent
 Makes an event occur on a specified time frame
 #### topDownCharacterController2D
-
+Handles allowing the player to move
 #### tutorialEvents
 Handles setting the text in the tutorial to the next instruction
 #### upgradeScript
@@ -122,7 +123,7 @@ Music used in the Base
 Unused, from an attempt to make items transparent.
 ## Prefabs
 #### Base
-
+The base, the current sprite is a placeholder.
 #### BulkyZombie
 A zombie with high health and attack but low speed.
 #### bullet
